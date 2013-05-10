@@ -51,7 +51,7 @@
     " Use bash for the shell
     set shell=/bin/bash\ -i
     " Set the copy buffer to infinity
-    match OverLength /\%101v.\+/
+    set viminfo='100,h
     " Re-open VIM to the last spot you had open.
     if has("autocmd")
         au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
